@@ -1,8 +1,8 @@
 import { addItem } from './shoplist.js';
 import { renderList } from './render.js';
 
-const addBtn = document.querySelector('.btn-add');
-addBtn.addEventListener('click', (e) => {
+const formElement = document.querySelector('.newitem-form');
+formElement.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const nameInput = document.querySelector('#input-name');
